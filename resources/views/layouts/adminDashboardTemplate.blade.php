@@ -220,7 +220,7 @@
                 <li class="header">MAIN NAVIGATION</li>
                 <!-- Optionally, you can add icons to the links -->
                 <li{{(Request::segment(1) == 'dashboard') ? ' class=active' : ''}}><a href="{{url('/dashboard')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-                <li{{(Request::segment(1) == 'agent') ? ' class=active' : ''}}><a href="{{url('agent')}}"><i class="fa fa-user-plus"></i> <span>Staff</span></a></li>
+                <li{{(Request::segment(1) == 'agent') ? ' class=active' : ''}}><a href="{{url('staff')}}"><i class="fa fa-user-plus"></i> <span>Staff</span></a></li>
                 <li{{(Request::segment(1) == 'lgu') ? ' class=active' : ''}}><a href="{{url('/lgu')}}"><i class="fa fa-bank"></i> <span>LGUs</span></a></li>
                 <li class="treeview">
                     <a href="#">

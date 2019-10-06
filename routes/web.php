@@ -21,9 +21,9 @@ Route::get('admin', function(){
 
 Route::group(['middleware' => ['auth','role:admin|super admin']],function (){
     Route::get('/dashboard','EmployeePageController@dashboard');
-    Route::get('/agent','EmployeePageController@agent');
+    Route::get('/staff','EmployeePageController@agent');
     Route::get('/lgu','EmployeePageController@lgu');
-    Route::get('/agent/profile/{id}','EmployeePageController@agentProfile');
+    Route::get('/staff/profile/{id}','EmployeePageController@agentProfile');
     Route::post('/add-lgu','Lgu\LguController@addLgu');
 });
 
